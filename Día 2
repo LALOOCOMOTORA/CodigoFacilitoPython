@@ -1,0 +1,21 @@
+cantidad = int(input(" Ingrese la cantidad de usuarios que desea registrar "))
+for num in range(cantidad):
+    print(" Para su registro por favor ingrese los siguentes datos ")
+    first_name = input('Ingrese su Nombre(s): ')
+    while len(first_name) <5 or len(first_name) >50:
+        print("El Nombre(s) debe ser min de  5 caracteres o maximo 50 ")
+        first_name = input('Ingrese su Nombre(s): ')
+    last_name = input('Ingrese su Apellido(s): ')
+    while len(last_name) <5 or len(first_name) >50:
+        print("El Apellido(s) debe ser min de  5 caracteres o maximo 50 ")
+        last_name = input('Ingrese su Apellido(s): ')
+
+    num_phone = input('Ingrese su Número de teléfono: ')
+    while len(num_phone) !=10:
+        print("Su Número de teléfono debe ser min de  5 caracteres o maximo 50 ")
+        num_phone = input('Ingrese su Número de teléfono: ')
+    email = input('Ingrese su Correo Electrónico: ')
+    while len(email) <5 or len(first_name) >50:
+        print("Su Correo Electrónico debe ser min de  5 caracteres o maximo 50 ")
+        email = input('Ingrese su Correo Electrónico: ')
+    print('Hola: ' + first_name+' '+last_name+',En breve recibirás un correo a '+email)

@@ -1,0 +1,10 @@
+print(" Para su registro por favor ingrese los siguentes datos ")
+first_name = input('Ingrese su Nombre(s): ')
+last_name = input('Ingrese su Apellido(s): ')
+num_phone = int(input('Ingrese su Número de teléfono: '))
+email = input('Ingrese su Correo Electrónico: ')
+
+
+print('Hola: ' + first_name+' '+last_name+',En breve recibirás un correo a '+email)
+
+
